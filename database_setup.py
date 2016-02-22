@@ -63,7 +63,7 @@ class Item(Base):
 
 
 # create table
-engine = create_engine('postgresql+pscyopg2://catalog:catalog@localhost/catalog')
+engine = create_engine('postgresql+psycopg2://catalog:catalog@localhost/catalog')
  
 
 Base.metadata.create_all(engine)
