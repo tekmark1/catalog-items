@@ -28,7 +28,7 @@ session = DBSession()
 
 # create a client_id from json data (client_id) retrieved from google signin
 CLIENT_ID = json.loads(
-	open('client_secrets.json', 'r').read())['web']['client_id']
+	open(r'/var/www/Catalog/client_secrets.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Catalog Application"
 
 # create a randomized state token
@@ -51,7 +51,7 @@ def gconnect():
 
     try:
         # Upgrade the authorization code into a credentials object
-        oauth_flow = flow_from_clientsecrets('client_secrets.json', scope='')
+        oauth_flow = flow_from_clientsecrets(r'/var/www/Catalog/client_secrets.json', scope='')
         oauth_flow.redirect_uri = 'postmessage'
         credentials = oauth_flow.step2_exchange(code)
     except FlowExchangeError:
