@@ -19,7 +19,7 @@ import requests
 app = Flask(__name__)
 
 # connect to database created in database_setup.py
-engine = create_engine('sqlite:///catalog.db')
+engine = create_engine(''postgresql+psycopg2://catalog:catalog@localhost/catalog'')
 Base.metadata.bind = engine
 
 # create an object (session) which allows us to perform our CRUD operations to the database
