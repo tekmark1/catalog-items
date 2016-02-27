@@ -19,7 +19,7 @@ import requests
 app = Flask(__name__)
 
 # connect to database created in database_setup.py
-engine = create_engine(''postgresql+psycopg2://catalog:catalog@localhost/catalog'')
+engine = create_engine('postgresql+psycopg2://catalog:catalog@localhost/catalog')
 Base.metadata.bind = engine
 
 # create an object (session) which allows us to perform our CRUD operations to the database
@@ -446,5 +446,5 @@ def disconnect():
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.debug = True
-    app.run()
+    app.run(host='127.0.0.1', port=8080)
     #host='0.0.0.0', port=8000)
