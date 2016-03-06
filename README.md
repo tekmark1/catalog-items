@@ -32,6 +32,7 @@ http://ec2-52-34-35-40.us-west-2.compute.amazonaws.com/
 12. Installed sqlalchemy
   - sudo apt-get install python-sqlalchemy
 13. Logged into postgresql database as postgress and created a new user named catalog (with password catalog), as well as a new database named catalog.
+
 ## Third Party Sources
 1. https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
   - Used this website to figure out how to create a new user and database (as well as to set permissions) in postgresql
