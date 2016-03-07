@@ -7,6 +7,8 @@
 http://ec2-52-34-35-40.us-west-2.compute.amazonaws.com/
 ## Password for 'grader'
 'grader263@'
+## Passphrase for key
+'grader263@123'
 ## Installed Software and Configuration Changes
 1. Upgraded all packages
 2. Reconfigured local timezone to UTC
