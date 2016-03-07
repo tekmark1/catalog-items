@@ -5,6 +5,8 @@
 2200
 ## URL to Hosted Web Application
 http://ec2-52-34-35-40.us-west-2.compute.amazonaws.com/
+## Password for 'grader'
+'grader263@'
 ## Installed Software and Configuration Changes
 1. Upgraded all packages
 2. Reconfigured local timezone to UTC
@@ -32,6 +34,8 @@ http://ec2-52-34-35-40.us-west-2.compute.amazonaws.com/
 12. Installed sqlalchemy
   - sudo apt-get install python-sqlalchemy
 13. Logged into postgresql database as postgress and created a new user named catalog (with password catalog), as well as a new database named catalog.
+14. Disabled root login abilities
+  - sudo /etc/ssh/sshd_config
 
 ## Third Party Sources
 1. https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
